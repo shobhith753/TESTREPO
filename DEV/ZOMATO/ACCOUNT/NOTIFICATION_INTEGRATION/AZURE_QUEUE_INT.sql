@@ -1,5 +1,5 @@
 -- Snapshot for NOTIFICATION INTEGRATION AZURE_QUEUE_INT (DESCRIBE NOTIFICATION INTEGRATION)
--- Generated at: 2025-11-15 17:30:44 UTC
+-- Generated at: 2025-11-15 17:35:34 UTC
 -- Source SQL: DESC NOTIFICATION INTEGRATION AZURE_QUEUE_INT
 
 -- property | property_type | property_value | property_default
