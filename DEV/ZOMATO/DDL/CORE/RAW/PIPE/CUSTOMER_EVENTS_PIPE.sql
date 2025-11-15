@@ -1,3 +1,0 @@
-create or replace pipe CUSTOMER_EVENTS_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.CUSTOMER_EVENTS_RAW
-FROM @RAW.ZOMATO_EXT_STAGE/customer_events/
-FILE_FORMAT = (FORMAT_NAME = RAW.FF_JSON_STD);

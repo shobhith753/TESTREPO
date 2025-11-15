@@ -1,3 +1,0 @@
-create or replace pipe PROMOTION_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.PROMOTION_RAW
-FROM @RAW.ZOMATO_EXT_STAGE/promotion/
-FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);

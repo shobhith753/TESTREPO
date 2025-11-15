@@ -1,3 +1,0 @@
-create or replace pipe CUSTOMER_FEEDBACK_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.CUSTOMER_FEEDBACK_RAW
-FROM @RAW.ZOMATO_EXT_STAGE/customer_feedback/
-FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);
