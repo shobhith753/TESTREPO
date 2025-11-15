@@ -1,0 +1,14 @@
+create or replace view V_PAYMENT_STG(
+	PAYMENT_ID,
+	ORDER_ID,
+	PAYMENT_STATUS,
+	PAYMENT_AT,
+	PAYMENT_AMOUNT
+) as
+SELECT
+  TRY_TO_NUMBER(PAYMENT_ID)                                  AS PAYMENT_ID,
+  TRY_TO_NUMBER(ORDER_ID)                                    AS ORDER_ID,
+  UPPER(TRIM(PAYMENT_STATUS))                                AS PAYMENT_STATUS,
+  TRY_TO_TIMESTAMP_NTZ(PAYMENT_AT)                           AS PAYMENT_AT,
+  COALESCE(TRY_TO_NUMBER(PAYMENT_AMOUNT), 0)                 AS PAYMENT_AMOUNT
+FROM RAW.PAYMENT_RAW;
