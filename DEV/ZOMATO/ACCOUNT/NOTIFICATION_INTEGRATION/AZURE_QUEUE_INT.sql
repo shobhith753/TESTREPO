@@ -1,0 +1,12 @@
+-- Snapshot for NOTIFICATION INTEGRATION AZURE_QUEUE_INT (DESCRIBE NOTIFICATION INTEGRATION)
+-- Generated at: 2025-11-15 15:52:27 UTC
+-- Source SQL: DESC NOTIFICATION INTEGRATION AZURE_QUEUE_INT
+
+-- property | property_type | property_value | property_default
+-- ENABLED | Boolean | true | false
+-- USE_PRIVATELINK_ENDPOINT | Boolean | false | false
+-- AZURE_STORAGE_QUEUE_PRIMARY_URI | String | https://snowflake2azuredemo1.queue.core.windows.net/zomatowarehouse | 
+-- AZURE_CONSENT_URL | String | https://login.microsoftonline.com/f031fa1a-7a7f-4523-97e4-e3053ecf3690/oauth2/authorize?client_id=88f95356-de94-4284-944b-9bb807c73c27&response_type=code | 
+-- AZURE_MULTI_TENANT_APP_NAME | String | rrccrcsnowflakepacint_1763199679016 | 
+-- DIRECTION | String | INBOUND | 
+-- COMMENT | String |  | 

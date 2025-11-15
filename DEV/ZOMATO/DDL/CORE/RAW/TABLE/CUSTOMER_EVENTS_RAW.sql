@@ -1,0 +1,3 @@
+create or replace TABLE CUSTOMER_EVENTS_RAW (
+	EVENT_RAW VARIANT
+);
