@@ -1,0 +1,7 @@
+create or replace masking policy MP_PHONE_MASK as (VAL VARCHAR) 
+returns VARCHAR ->
+CASE
+    WHEN CURRENT_ROLE() IN ('ZOMATO_PII_ADMIN_ROLE','ACCOUNTADMIN') THEN VAL
+    ELSE CONCAT('XXXXXX', RIGHT(VAL, 4))
+  END
+;
