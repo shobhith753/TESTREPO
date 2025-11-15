@@ -1,5 +1,5 @@
 -- Auto-generated STAGE DDL for ZOMATO_DWH.RAW.ZOMATO_EXT_STAGE
--- Generated at: 2025-11-15 18:38:38 UTC
+-- Generated at: 2025-11-15 19:14:32 UTC
 
 CREATE OR REPLACE STAGE "ZOMATO_EXT_STAGE"
   URL = 'azure://snowflake2azuredemo1.blob.core.windows.net/zomato-landing/'
