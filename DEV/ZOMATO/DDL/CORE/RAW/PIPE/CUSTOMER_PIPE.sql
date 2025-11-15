@@ -1,0 +1,3 @@
+create or replace pipe CUSTOMER_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.CUSTOMER_RAW
+FROM @RAW.ZOMATO_EXT_STAGE/customer/
+FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);

@@ -1,0 +1,3 @@
+create or replace pipe DELIVERY_TRIP_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.DELIVERY_TRIP_RAW
+FROM @RAW.ZOMATO_EXT_STAGE/delivery_trip
+FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);
