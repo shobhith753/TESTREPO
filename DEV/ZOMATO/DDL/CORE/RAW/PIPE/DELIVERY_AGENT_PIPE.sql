@@ -1,3 +1,0 @@
-create or replace pipe DELIVERY_AGENT_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.DELIVERY_AGENT_RAW
-FROM @RAW.ZOMATO_EXT_STAGE/delivery_agent/
-FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);

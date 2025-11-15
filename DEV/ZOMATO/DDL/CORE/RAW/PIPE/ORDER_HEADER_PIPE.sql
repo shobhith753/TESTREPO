@@ -1,3 +1,0 @@
-create or replace pipe ORDER_HEADER_PIPE auto_ingest=true integration='AZURE_QUEUE_INT' as COPY INTO RAW.ORDER_HEADER_RAW
-FROM @RAW.ZOMATO_EXT_STAGE/order_header/
-FILE_FORMAT = (FORMAT_NAME = RAW.FF_CSV_STD);
