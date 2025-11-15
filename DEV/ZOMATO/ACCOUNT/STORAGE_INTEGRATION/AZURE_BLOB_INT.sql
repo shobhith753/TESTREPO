@@ -1,0 +1,14 @@
+-- Snapshot for STORAGE INTEGRATION AZURE_BLOB_INT (DESCRIBE STORAGE INTEGRATION)
+-- Generated at: 2025-11-15 15:43:24 UTC
+-- Source SQL: DESC STORAGE INTEGRATION AZURE_BLOB_INT
+
+-- property | property_type | property_value | property_default
+-- ENABLED | Boolean | true | false
+-- STORAGE_PROVIDER | String | AZURE | 
+-- STORAGE_ALLOWED_LOCATIONS | List | azure://snowflake2azuredemo1.blob.core.windows.net/zomato-landing/ | []
+-- STORAGE_BLOCKED_LOCATIONS | List |  | []
+-- USE_PRIVATELINK_ENDPOINT | Boolean | false | false
+-- AZURE_TENANT_ID | String | f031fa1a-7a7f-4523-97e4-e3053ecf3690 | 
+-- AZURE_CONSENT_URL | String | https://login.microsoftonline.com/f031fa1a-7a7f-4523-97e4-e3053ecf3690/oauth2/authorize?client_id=61a89bc5-c4a8-4774-b12a-42fdf7c28345&response_type=code | 
+-- AZURE_MULTI_TENANT_APP_NAME | String | s12aqisnowflakepacint_1763189255446 | 
+-- COMMENT | String |  | 
